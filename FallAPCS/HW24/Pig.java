@@ -38,16 +38,16 @@
 public class Pig
 {
 	//Q: How does this initialization make your life easier?
-  private static final String VOWELS = "aeiou";
-  private static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+  	private static final String VOWELS = "aeiou";
+  	private static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 	
 
 	/*=====================================
-		boolean hasA(String,String) -- checks for a letter in a String
+	boolean hasA(String,String) -- checks for a letter in a String
     pre:  w != null, letter.length() == 1
     post: hasA("cat", "a") -> true
     hasA("cat", "p")       -> false
-  =====================================*/
+	=====================================*/
 	public static boolean hasA(String w, String letter) 
 	{
 		w = w.toLowerCase(); // convert string to lower case
@@ -61,12 +61,12 @@ public class Pig
 		return false; // otherwise return false
 	} //end hasA()
 
-  /*=====================================
+	/*=====================================
     boolean isAVowel(String) -- tells whether a letter is a vowel
     precondition: letter.length() == 1
-  =====================================*/
-  public static boolean isAVowel(String letter) 
-  {
+  	=====================================*/
+  	public static boolean isAVowel(String letter) 
+  	{
 		letter = letter.toLowerCase(); // convert the letter to lowercase
 		
 		if (letter.length() == 1) 
@@ -75,15 +75,15 @@ public class Pig
 		} // return the truth value of whether or not letter is in vowels
 		
 		return false;  //otherwise return false
-  }
+  	}
 
-  /*=====================================
+  	/*=====================================
     int countVowels(String) -- counts vowels in a String
     pre:  w != null
     post: countVowels("meatball") -> 3
-  =====================================*/
-  public static int countVowels(String w) 
-  {
+  	=====================================*/
+  	public static int countVowels(String w) 
+  	{
 		w = w.toLowerCase(); // convert the string to lowercase
 		
 		if (w != null) 
@@ -103,16 +103,16 @@ public class Pig
 		}
 
 		return -1; // if there are no vowels, return -1 
-  }
+	}
 
-  /*=====================================
+  	/*=====================================
     boolean hasAVowel(String) -- tells whether a String has a vowel
     pre:  w != null
     post: hasAVowel("cat") -> true
     hasAVowel("zzz")       -> false
     =====================================*/
-  public static boolean hasAVowel(String w) 
-  {
+  	public static boolean hasAVowel(String w) 
+  	{
 		w = w.toLowerCase(); //changes w into lowercase letters.
 	
 		if (w != null) 
@@ -128,15 +128,15 @@ public class Pig
 			}
 		}
 		return false;
-  }
+  	}
 
-  /*=====================================
+  	/*=====================================
     String allVowels(String) -- returns vowels in a String
     pre:  w != null
     post: allVowels("meatball") -> "eaa"
     =====================================*/
-  public static String allVowels(String w) 
-  {
+  	public static String allVowels(String w) 
+  	{
 		w = w.toLowerCase(); //changes w into lowercase letters.
 		if ((w != null) && (hasAVowel(w))) 
 		{ // if w is not null and has vowels
@@ -152,14 +152,14 @@ public class Pig
 			return collection; //and returns the list of vowels
 		}
 		return "";
-  }
+  	}
 
-  //pre: w != null
-  //post: firstVowel("") --> ""
-  //      firstVowel("zzz") --> ""
-  //      firstVowel("meatball") --> "e"  
-  public static String firstVowel(String w) 
-  {
+  	//pre: w != null
+  	//post: firstVowel("") --> ""
+  	//      firstVowel("zzz") --> ""
+  	//      firstVowel("meatball") --> "e"  
+  	public static String firstVowel(String w) 
+  	{
 		if (w != null) 
 		{ //if w is not null
 			if (! (allVowels(w).equals("")) ) 
@@ -168,23 +168,23 @@ public class Pig
 			}
 		}
 		return "";
-  }
+  	}
     
 	//pre: w != null and w.length() > 0
-  //post: beginsWithVowel("apple")  --> true
-  //      beginsWithVowel("strong") --> false
-  public static boolean beginsWithVowel(String w) 
-  {
+  	//post: beginsWithVowel("apple")  --> true
+  	//      beginsWithVowel("strong") --> false
+  	public static boolean beginsWithVowel(String w) 
+  	{
 		if ((w != null) && (w.length() > 0)) 
 		{ //if w is not null and is not a length of 0
 	  		String firstLetter = w.substring(0,1); //takes the first letter of w
 	  		return isAVowel(firstLetter); //checks if it is a vowel or not.
 		}
 		return false;
-  }
+  	}
 	
-  public static String engToPig(String s) 
-  {
+  	public static String engToPig(String s) 
+  	{
 		String collection = "";
 			
 		while (s.indexOf(" ") != -1) 
@@ -210,8 +210,8 @@ public class Pig
 		
 	}
     
-  public static String changeCapital(String c, boolean capital) 
-  {
+  	public static String changeCapital(String c, boolean capital) 
+  	{
 		if (capital == true) 
 		{ //if the word originally had a capital letter at the beginning
 			String firstLetter = (c.substring(0, 1)).toUpperCase(); //take the fist letter of the new word and capitalize it.
@@ -219,9 +219,9 @@ public class Pig
 			c = firstLetter + c; //make the original string equal to the capitalized letter and the rest of the word.
 		}
 		return c;
-  }
+  	}
 
-  public static boolean yVowel(String s) 
+  	public static boolean yVowel(String s) 
 	{ //checks to see if there's y is the first vowel in the string
 		String lower = s.toLowerCase();  //creates a lowercase version of the string
 
@@ -234,7 +234,7 @@ public class Pig
 		return false; //otherwise false
 	}
 
-  public static int yIndex(String w) 
+  	public static int yIndex(String w) 
 	{ //helper function that finds the index of y to avoid long lines of code
 		String lower = w.toLowerCase(); //converts string to lowercase
 		return lower.indexOf("y"); //returns the index of y
@@ -244,8 +244,8 @@ public class Pig
     //post: engToPig("apple")  --> "appleway"
     //      engToPig("strong") --> "ongstray"
     //      engToPig("java")   --> "avajay"
-  public static String wordToPig(String w) 
-  {
+  	public static String wordToPig(String w) 
+  	{
 		boolean hasCapital = false;
 		if ((w != null) && w.length() > 0) 
 		{
@@ -259,14 +259,15 @@ public class Pig
     			return changeCapital(w + "way", hasCapital);
 			}
 			
-	  	//otherwise, if the 1st vowel is y acting like a vowel:
+	  		//otherwise, if the 1st vowel is y acting like a vowel:
 			else if (yVowel(w)) 
 			{
 				// send the string from the y onwards + the consonants before the y + ay with the boolean checking if it's capital to the Sentence conversion method
 				return changeCapital ( w.substring(yIndex(w)) + w.substring(0,yIndex(w)).toLowerCase() + "ay", hasCapital);
 	  		}
 			
-			else {
+			else 
+			{
 				for (int i = 0; i < w.length(); i++) 
 				{
       				String cons = ""; //String to hold the beginning consonant(s)
