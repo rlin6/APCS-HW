@@ -1,11 +1,11 @@
 /* Team #4, Team Lin^3 : Victor Lin, Ricky Lin, Susan Lin
    APCS1 pd2
-   HW09 -- CMYM
-   2017-10-02 */
+   HW10 -- Mo Money Mo Problems
+   2017-10-03 */
 
 public class BankAccount
-{	
-	public String accName;
+{
+	public String accName; //inst variables
 	private String accPassword;
 	private int accPin;
 	private int accNum;
@@ -30,6 +30,42 @@ public class BankAccount
 		//overloaded constructor
 	}
 
+	//mutators
+	public static String setName(String newName)
+	{
+		String old = accName;
+		accName = newName;
+		return old;
+	}
+
+	public static String setPW(String newPW)
+	{
+		String old = accPassword;
+		accPassword = newPW;
+		return old;
+	}
+
+	public static int setPin(int newPin)
+	{
+		int old = accPin;
+		accPin = newPin;
+		return old;
+	}
+
+	public static int setNum(int newNum)
+	{
+		int old = accNum;
+		accNum = newNum;
+		return old;
+	}
+
+	public static double setBal(double newBal)
+	{
+		double old = balance;
+		balance = newBal;
+		return old;
+	}
+
 	public void deposit(double input)
 	{
 		balance += input;
@@ -50,6 +86,17 @@ public class BankAccount
 		System.out.println("Account Number: " + accNum);
 		System.out.println("Balance: " + balance);
 		//print out account information
+	}
+
+	public String toString()
+	{
+		String ret = "\nAccount Info:\n";
+		ret += "\nName: " + accName;
+		ret += "\nPassword: " + accPassword;
+		ret += "\nPIN: " + accPin;
+		ret += "\nAccount Number: " + accNum;
+		ret += "\nBalance: " + balance;
+		return ret;
 	}
 
 	public static void main(String[] args)

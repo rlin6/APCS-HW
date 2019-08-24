@@ -2,7 +2,7 @@
    APCS pd2
    HW22 -- Otnay Ybay ethay Airhay Onway Ymay Inneechay Inchay Inchay
    2017-10-24 */
- 
+
 /***
  * class Pig
  * a Pig Latin translator
@@ -23,8 +23,8 @@
 
 public class Pig
 {
-  //Q: How does this initialization make your life easier?
-  private static final String VOWELS = "aeiou";
+    //Q: How does this initialization make your life easier?
+    private static final String VOWELS = "aeiou";
 
     /*=====================================
     boolean hasA(String,String) -- checks for a letter in a String
@@ -32,12 +32,12 @@ public class Pig
     post: hasA("cat", "a") -> true
     hasA("cat", "p")       -> false
     =====================================*/
-    public static boolean hasA(String w, String letter) 
+    public static boolean hasA(String w, String letter)
     {
         if (w.indexOf(letter) == -1) {
             return false;
         }
-    
+
     return true;
     }//end hasA()
 
@@ -46,7 +46,7 @@ public class Pig
     boolean isAVowel(String) -- tells whether a letter is a vowel
     precondition: letter.length() == 1
     =====================================*/
-    public static boolean isAVowel(String letter) 
+    public static boolean isAVowel(String letter)
     {
       if (VOWELS.indexOf(letter.toLowerCase()) == -1) {return false;}
       return true;
@@ -58,7 +58,7 @@ public class Pig
     pre:  w != null
     post: countVowels("meatball") -> 3
     =====================================*/
-    public static int countVowels(String w) 
+    public static int countVowels(String w)
     {
       w = w.toLowerCase();
       int ctr = 0;
@@ -75,7 +75,7 @@ public class Pig
     post: hasAVowel("cat") -> true
     hasAVowel("zzz")       -> false
     =====================================*/
-    public static boolean hasAVowel(String w) 
+    public static boolean hasAVowel(String w)
     {
       w = w.toLowerCase();
       for (int i = 0; i < w.length(); i++) {
@@ -90,7 +90,7 @@ public class Pig
     pre:  w != null
     post: allVowels("meatball") -> "eaa"
     =====================================*/
-    public static String allVowels(String w) 
+    public static String allVowels(String w)
     {
       String subt = "";
       for (int i = 0; i < w.length(); i++) {
@@ -100,7 +100,7 @@ public class Pig
     }
 
 
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         System.out.println("= = = = = Testing hasA = = = = =");
         System.out.println(hasA("cat","p"));//expecting false
@@ -112,7 +112,7 @@ public class Pig
         System.out.println(countVowels("meatball"));//expecting 3
         System.out.println(countVowels("catcomba"));//expecting 3
         System.out.println("= = = = = Testing hasAVowel = = = = =");
-        System.out.println(hasAVowel("cat"));//expecting true 
+        System.out.println(hasAVowel("cat"));//expecting true
         System.out.println(hasAVowel("zzz"));//expecting false
         System.out.println("= = = = = Testing allVowels = = = = =");
         System.out.println(allVowels("meatball"));//expecting eaa

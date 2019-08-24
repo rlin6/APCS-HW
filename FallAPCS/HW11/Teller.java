@@ -3,12 +3,11 @@
    HW11 -- Breaking the Bank
    2017-10-04 */
 
-public class Teller 
+public class Teller
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
-		
-        BankAccount fred = new BankAccount();
+		BankAccount fred = new BankAccount();
 		System.out.println("Default Account Info:");
 		System.out.println(fred);
 		fred.setBalance(1000);
@@ -22,5 +21,5 @@ public class Teller
 		fred.deposit(10);
 		System.out.println("New Account Info:");
 		System.out.println(fred);
-    }
+	}
 }
