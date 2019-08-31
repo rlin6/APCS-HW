@@ -1,0 +1,12 @@
+Beedrill,Bug,None,333,258,178,188,248
+Arbok,Poison,None,323,268,236,228,258
+Raticate,Normal,None,313,260,218,198,292
+Raichu,Electric,None,323,278,208,278,298
+Wigglytuff,Normal,None,483,238,188,198,188
+Venomoth,Bug,None,343,228,218,278,278
+Venusaur,Grass,None,363,262,264,298,258,Solarbeam,Hyper Beam,Poisonpowder,Sleep Powder
+Electabuzz,Electric,None,333,264,212,268,308,Toxic,Take Down,Take Down,Mega Punch
+Mr-mime,Psychic,None,283,188,228,298,278,Mega Kick,Toxic,Mega Punch,Mega Punch
+Victreebel,Grass,None,363,308,228,298,238,Wrap,Hyper Beam,Razor Leaf,Sleep Powder
+Hypno,Psychic,None,373,244,238,328,232,Psychic,Double Edge,Pound,Hyper Beam
+Starmie,Water,None,323,248,268,298,328,Ice Beam,Thunder,Swift,Thunder Wave

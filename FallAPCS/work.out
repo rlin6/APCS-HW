@@ -1,0 +1,52 @@
+Croatian Kuna
+APCS1 Pd2
+HW68 -- <PPMP>
+2018-1-12
+
+1. Trace:
+	2013 is not divisible by 3
+	2013->672->335->113->37->14->6->3->2->2...
+	Answer is C) 2
+
+2. Trace:
+	a[0] = a[(a[0]+3)%a.length] -> a[3]
+	a[1] = a[(a[1]+3)%a.length] -> a[0]
+	Answer is B)1
+
+3. nums = {2,1,2}
+   x = 2
+   y = 1
+   2 != 1
+   Answer is D)
+
+4. cities = {Atlanta, Boston}
+   only do for loop once
+   Answer is B) [Atlanta, +, Boston]
+
+5. Draw a inheritance tree
+   Answer is C) methodA and methodB
+
+6. Use same inheritance tree
+   Answer is B) InterfaceB obj = new ClassA()
+
+7. All three things are most reasonably stated as a variable within the same class Car
+   Answer is A)
+
+8. III doesn't work because it returns a boolean
+   II doesn't work because the parameter is SomeClass whilch isn't Comparable Object
+   Answer is A) I only
+
+9. Trace:
+	realize lenCount never resets to zed, findLongest(10) would return all occurrences of 10
+	Question 10 confirms
+	Answer is C)
+
+10. Answer is D)
+
+11. public int nextTankToFill(int threshold) {
+    	   for (int level : tanks) {
+	       if (level < threshold) {
+	       	  return tanks.indexOf(level);}
+		  }
+	return FuelRobot. getCurrentIndex();
+	}

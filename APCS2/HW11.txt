@@ -1,0 +1,13 @@
+Ricky Lin
+APCS2 pd02
+HW#11 -- Get On the Bus
+2018-03-01
+
+1) Place a knight in a random patch of the checkboard
+2) If the knight has been on every patch, meaning that each one has their number changed to a positive number that indicates that a knight's been there, you found a solution.
+3) Find and indicate all the possible movement, shown by changing the number of the available patch to a negative number. This would not account for the ones the knight's already been on.
+4) Move the knight to an available patch.
+   The knight cannot move onto a location previously occupied the number of the patch would make it impossible. 
+5) If you cannot move your knight anywhere, remove your knight and undo the stamp it has left on its location.
+6) Continue making moves with your knight, undoing everytime something goes wrong until:
+6) You have found your solution with all the spaces occupied at least once. 

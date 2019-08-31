@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Server Input</title>
+  </head>
+  <body>
+    <h1>Results</h1>
+    <table>
+      <tr>
+        <th>Year</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Reason</th>
+      </tr>
+      {%for each in results%}
+        <tr>
+          <td>{{each["prizes"][0]["year"]}}</td>
+          <td>{{each["firstname"]}} {{each["surname"]}}</td>
+          <td>{{each["prizes"][0]["category"]}}</td>
+          <td>{{each["prizes"][0]["motivation"]}}</td>
+        </tr>
+      {%endfor%}
+    </table>
+    
+  </body>
+<html>

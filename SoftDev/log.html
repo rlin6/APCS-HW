@@ -1,0 +1,35 @@
+<!--
+Duckies - Daniel Gelfand and Ricky Lin
+SoftDev1 pd6
+K#15 Oh yes, perhaps I do...
+2018-10-03
+-->
+
+<!DOCTYPE HTML>
+
+<html>
+
+  <head>
+    <!-- Adding YoureIn to title -->
+    {% extends "index.html" %}
+    {% block title %}
+      YoureIn
+    {% endblock %}
+
+  </head>
+
+  <body>
+    <!-- Changing message to user in body -->
+    {% block content %}
+	  Welcome Bob! <br>
+
+    <!--User clicks the button to log out -->
+    <form action="/logout">
+     <button type="submit">Click Me!</button>
+    </form>
+
+    {% endblock %}
+
+  </body>
+
+</html>

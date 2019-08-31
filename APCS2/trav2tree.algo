@@ -1,0 +1,27 @@
+Ricky Lin
+APCS2 pd2
+HW#41 -- A Tree Grows in 251
+2018-04-30 M 
+
+To construct a binary tree, the minimal pre-req you need 2 transversals. 
+Additional information that would help for this way is that each node must contain unique data, meaning no duplicates.
+
+Given Pre-Order and In-Order 
+1) First element of the pre-order is the root.
+2) Find said element in the in-order. Elements left of it are on left subtree, right of it on right subtree. 
+3) Continue through pre-order and each element is the root of the subtree it contains.
+4) Finish for all elements of pre-order. 
+	
+Given Post-Order and In-Order
+1) Last element of the post-order is the root.
+2) Find said element in the in-order. Elements left of it are on left subtree, right of it on right subtree.
+3) Continue through post-order in reverse and each element is the root of the subtree it contains.
+4) Finish for all elements of post-order 
+
+Given Pre-Order and Post-Order
+1) First element of the pre-order transversal is the root.
+2) Start from right of pre-order and gather a group of letters, adding each element from its left.
+3) Check if the elements in group of letters matches the elements from the left and on in the post-order. 
+4) Repeat until 2 different groups is achieved.
+5) 2 groups make up the 2 subtrees of the root.
+6) Unsure - guess and check?  

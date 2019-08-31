@@ -1,0 +1,59 @@
+Ricky Lin
+APCS2 pd02
+HW#09: Yaaasss Queens
+2018-02-27 T 
+
+2x2:
+
+	This case is not solvable because the queens are unable to coexist on the same column and row, forcing them to be opposite of each other. However, this will
+	make them diagonal from each other, making this case impossible.
+
+3x3:
+
+	This case is also not solvable because placing two queens down would already take up all of the remaining spaces left for the third queen. The first placed 
+	queen will taken up 1 space and eliminate 6 spaces from being used and the 2nd queen will use up an additional 3 spaces including itself, leaving no place for
+	the third queen. 
+
+4x4:
+
+	This case is possible in one solution that I found. This arrangement goes like:
+	B B Q B
+	Q B B B
+	B B B Q
+        B Q B B
+	All the queens are a knight's L movement away from each other and none of them resides on the same column or row. They are arranged in a way such that they 
+	will not affect each other diagonally either.
+
+5x5: 
+	
+	This case is possible. One solution that I found involves:
+	Q B B B B
+	B B Q B B
+	B B B B Q
+	B Q B B B
+	B B B Q B
+	None of the queens are in the same column or row. They are also an L movement away from each other. This ensures that none of them could attack each other 
+	diagonally as well. 
+
+6x6: 
+
+	This case is possible. One solution that I found is:
+	B B B B Q B
+	B B Q B B B
+	Q B B B B B
+	B B B B B Q
+	B B B Q B B
+	B Q B B B B
+	None of the queens are on the same column or row. Because they are an L movement away from each other, none of them also lie on the same diagonal. They cannot
+	attack each other in this configuration.
+
+7x7:
+	
+	I was not able to find a possible case for this but I don't have evidence to prove or disprove its possibility. After placing 5 queens on the chessboard, all
+	my available spaces would be taken up even though I placed them in different rows, columns, and diagonals. 
+	
+8x8:
+	
+	This was the same case for 8x8. I could not find a possible case for this but I cannot prove that it's impossible either. There could be a solution that I have
+	not found but I would run out of space for it after 5 queens have been placed on the board. Even though they lie on different rows, columns, and diagonals, it
+	does not work out for me. 

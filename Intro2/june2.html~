@@ -1,0 +1,6 @@
+<html><body>
+<form method="get" action="jun2.py">
+What are you referred as: <input type="text" name="fnork"><br>
+Are you a superior lifeform? <input type="checkbox" name="ego" value="inflated"> 
+<input type="submit" name="anything" value="DON'T PRESS THIS OR ELSE">
+</body></html>

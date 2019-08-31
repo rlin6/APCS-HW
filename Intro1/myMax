@@ -1,0 +1,13 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname myMax) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ())))
+(define (midpoint x y) ( / ( + x y) 2 ) )
+(define (myMax x y) (+ (abs (- y (midpoint x y) ) ) (midpoint x y) ) ) 
+(myMax 3 5) 
+(myMax 53453 2342342)
+(define (midpoint3 x y z) ( / ( + x y z) 3) )
+(define (myMax3 x y z) (+ (abs ( - z (midpoint3 x y z) ) ) (midpoint3 x y z) ) )
+( myMax3 1 2 3) 
+( myMax3 6 7 8) 
+
+                        
